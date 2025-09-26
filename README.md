@@ -64,21 +64,25 @@ O arquivo de saída segue o mesmo formato JSON usado pelo sistema de previsão:
 ]
 ```
 
-## Preparação dos Dados
-
-1. Salve os dados JSON fornecidos em um arquivo chamado `dados_nivel_rios_itacoatiara.json` no mesmo diretório dos scripts.
-
 ## Uso
 
 ### 1. Treinamento do Modelo
 
 Execute o script de treinamento:
 ```bash
-python train_script.py
+python train_script.py <arquivo_dados.json>
+```
+
+**Parâmetros obrigatórios:**
+- `<arquivo_dados.json>`: Caminho para o arquivo JSON contendo os dados históricos de nível do rio
+
+**Exemplo:**
+```bash
+python train_script.py dados_nivel_rios_itacoatiara.json
 ```
 
 Este script irá:
-- Carregar os dados do arquivo `dados_nivel_rios_itacoatiara.json`
+- Carregar os dados do arquivo fornecido
 - Processar e preparar os dados para ML
 - Treinar um modelo Random Forest
 - Avaliar a performance do modelo
