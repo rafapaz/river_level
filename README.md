@@ -1,6 +1,6 @@
 # Sistema de Previsão de Nível de Rio
 
-Este sistema utiliza Machine Learning para prever o nível de um rio com base em dados históricos.
+Este sistema utiliza Machine Learning para prever o nível de um rio com base em dados históricos do site <https://proamanaus.com.br/nivel-dos-rios> (Amazonas - Brasil).
 
 ## Arquivos
 
@@ -110,7 +110,7 @@ python predict_script.py 2023 6        # Prevê níveis para todos os dias de ju
 - Se for outro mês, as previsões são feitas do dia 1 até o último dia do mês
 
 **Opções disponíveis:**
-- `--model, -m`: Especifica caminho do modelo (padrão: modelo_nivel_rio.pkl)
+- `--model, -m`: Especifica caminho do modelo (padrão: river_level_model.pkl)
 - `--verbose, -v`: Mostra informações detalhadas
 - `--help, -h`: Exibe ajuda
 
